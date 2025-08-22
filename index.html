@@ -27,11 +27,16 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+              homeBG: "url('./assets/images/home-background.png')",
+            },
             borderRadius: {
               "4xl": "2rem",
             },
             colors: {
-              teall: "#0B7572",
+              teal: "#0B7572",
+              white: "#FFFFFF",
+              oranged: "#FE724C",
             },
             fontFamily: {
               monts: ["Montserrat", "sans-serif"],
@@ -50,5 +55,64 @@
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <section
+      class="max-w-[1440px] h-[853px] mx-auto bg-[url('/assets/images/home-background.png')] bg-cover bg-center"
+    >
+      <div
+        class="h-[100%] bg-gradient-to-r from-zinc-900 to-stone-900 opacity-70 relative overflow-hidden"
+      >
+        <div class="flex justify-between items-center px-[100px] pt-[20px]">
+          <img src="./assets/images/Foodie.png" alt="" />
+          <div class="flex gap-[40px] items-center">
+            <ul class="flex gap-[40px]">
+              <li class="list-none">
+                <a
+                  class="text-white font-bold font-roboto text-[16px ]"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="list-none">
+                <a
+                  class="text-white font-bold font-roboto text-[16px ]"
+                  href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="list-none">
+                <a
+                  class="text-white font-bold font-roboto text-[16px ]"
+                  href="#"
+                  >How It Works</a
+                >
+              </li>
+              <li class="list-none">
+                <a
+                  class="text-white font-bold font-roboto text-[16px ]"
+                  href="#"
+                  >Screenshots</a
+                >
+              </li>
+              <li class="list-none">
+                <a
+                  class="text-white font-bold font-roboto text-[16px ]"
+                  href="#"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+            <button
+              class="w-[138px] h-[52px] bg-white rounded-[100px] text-oranged font-roboto font-bold text-[16px]"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-[1000px] bg-orange-900 border-3 border-red-500 h-[1000px] z-[-1] absolute top-[-300px] left-130 rounded-[50%]"
+        ></div>
+      </div>
+    </section>
+  </body>
 </html>
